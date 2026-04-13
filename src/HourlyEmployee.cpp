@@ -6,7 +6,6 @@ using namespace std;
 HourlyEmployee::HourlyEmployee(string name, int id, double hourlyRate, double hoursWorked) 
     : Employee(name, id), hourlyRate(hourlyRate), hoursWorked(hoursWorked) {} // Constructor to initialize all member variables
 
-HourlyEmployee::~HourlyEmployee() {} // Destructor, no dynamic memory to clean up
 
 double HourlyEmployee::calculatePay() const {
     return hourlyRate * hoursWorked; // Pay is hourly rate times hours worked

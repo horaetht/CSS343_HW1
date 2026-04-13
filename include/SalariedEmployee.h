@@ -9,9 +9,8 @@ class SalariedEmployee : public Employee {
 
     public:
         SalariedEmployee(std::string name, int id, double weeklySalary);
-        virtual ~SalariedEmployee();
-        virtual double calculatePay() const override;
-        virtual void display() const override;
+        double calculatePay() const override;
+        void display() const override;
 };
 
 #endif

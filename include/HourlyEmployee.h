@@ -10,8 +10,7 @@ class HourlyEmployee : public Employee {
 
     public: // public members for constructor, destructor, and overridden functions
         HourlyEmployee(std::string name, int id, double hourlyRate, double hoursWorked);
-        virtual ~HourlyEmployee();
-        virtual double calculatePay() const override;
-        virtual void display() const override;
+        double calculatePay() const override;
+        void display() const override;
 };
 #endif
