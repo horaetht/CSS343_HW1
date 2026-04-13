@@ -4,7 +4,7 @@
 #include <string>
 
 class SalariedEmployee : public Employee {
-    private:
+    private: // private member for weekly salary
         double weeklySalary;
 
     public:
