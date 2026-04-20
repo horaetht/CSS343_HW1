@@ -11,5 +11,6 @@ double SalariedEmployee::calculatePay() const {
 
 void SalariedEmployee::display() const {
     Employee::display(); // Call base class display to show name and id
+    cout << "Employee Type: Salaried" << endl;
     cout << "Weekly Salary: $" << weeklySalary << endl;
 }

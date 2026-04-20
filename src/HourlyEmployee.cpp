@@ -13,6 +13,7 @@ double HourlyEmployee::calculatePay() const {
 
 void HourlyEmployee::display() const {
     Employee::display(); // just inherit name and id from base class
+    cout << "Employee Type: Hourly" << endl; // Display employee type
     cout << "Hourly Rate: $" << hourlyRate << endl; // Display hourly rate
     cout << "Hours Worked: " << hoursWorked << endl; // Display hourly rate and hours worked
     cout << "Total Pay: $" << calculatePay() << endl; // Display total pay
