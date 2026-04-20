@@ -2,7 +2,7 @@
 #include "SalariedEmployee.h"   
 #include "Employee.h"
 #include "HourlyEmployee.h"
-#include "ComissionEmployee.h"
+#include "CommissionEmployee.h"
 #include <vector>
 using namespace std;
 
@@ -12,12 +12,11 @@ int main () {
     // Create some employees
     employees.push_back(new SalariedEmployee("Alice", 1, 1000.0));
     employees.push_back(new HourlyEmployee("Bob", 2, 15.0, 40));
-    employees.push_back(new ComissionEmployee("Charlie", 3, 500.0, 2000.0, 0.1));
+    employees.push_back(new CommissionEmployee("Charlie", 3, 500.0, 2000.0, 0.1));
 
     // Display employee information and calculate pay
     for (const auto& emp : employees) {
         emp->display();
-        cout << "Calculated Pay: $" << emp->calculatePay() << endl;
         cout << "-----------------------------" << endl;
     }
 
